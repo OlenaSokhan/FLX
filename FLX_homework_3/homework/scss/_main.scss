@@ -1,0 +1,316 @@
+@mixin font{
+  font: $font;
+
+}
+@mixin font2{
+  font: $font2;
+
+}
+
+@mixin text{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@mixin abs{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 110px 0 0 -100px;
+
+}
+
+@mixin a{
+  background: $whitesmoke;
+  width: 80%;
+  margin-left: 200px;
+}
+
+@mixin btn{
+
+  padding: 15px 80px 15px 80px;
+}
+
+@mixin border{
+  border-right: none;
+  border-bottom: 1px solid grey;
+  border-left: none;
+  border-top: none;
+  padding: 0 0 10px 0 ;
+  margin: 0 20px 0 0;
+}
+
+body{
+  margin: 0;
+  background: $background;
+
+  .main-wrapper{
+    border: 5px solid silver;
+  }
+  .top-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    nav{
+      display: flex;
+
+      a{
+        color: $h1_header;
+        padding: 20px 110px 20px 110px;
+        @include font;
+        @include text;
+        border-right: 2px solid silver ;
+
+        &:nth-child(3){
+          border-right: none;
+        }
+      }
+    }
+
+    .logo{
+      img{
+        width: 250px;
+      }
+    }
+
+  }
+
+}
+
+header{
+  height:100vh;
+  background: $back_image;
+  background-size:cover;
+
+  h1{
+    text-align: center;
+    padding-top: 200px;
+    @include font2;
+    color:$h1_header;
+    text-transform: uppercase;
+
+  }
+
+  .btn-top{
+    @include abs;
+@include btn;
+    background:$background_btn;
+    color: $whitesmoke;
+    @include font;
+    @include text;
+
+  }
+
+}
+
+.toolbar{
+  margin: 20px 0 0 80%;
+
+
+  input{
+    padding: 10px;
+    border: 1px solid $whitegrey;
+    background: $background;
+  }
+
+}
+
+.post-list{
+  h1{
+    @include font2;
+    @include text;
+    margin: 10px 0 0 89%;
+    color: $text-color;
+  }
+
+    img{
+      padding: 10px;
+      float: left;
+      clear: right;
+    }
+
+  .post-description{
+    @include border;
+    padding-top: 10px;
+    color: $colororange;
+    font-size: 14px;
+  }
+
+  .btn{
+
+    @include btn;
+    background:$background_btn;
+    color: $whitesmoke;
+    @include font;
+    @include text;
+    border: none;
+    float: right;
+    margin: 40px 20px 0 0 ;
+
+
+  }
+
+  .post{
+    h3{
+      @include text;
+      @include font;
+      color: $text_color_h3;
+      font-size: 19px;
+      margin: 5px 0 0 0;
+    }
+  }
+
+  p{
+font-family: "Liberation Serif";
+    font-size: 18px;
+    line-height: 1.5;
+    padding-right: 10px;
+    margin: 3px 0 0 0;
+    color: $text-color;
+
+  }
+
+  }
+
+article {
+@include a;
+  display: flex;
+
+
+  &:nth-child(2){
+    background:$background_article;
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(3){
+    background:$background_article;
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(4){
+    background:$background_article;
+    margin-bottom: 20px;
+  }
+  &:nth-child(5){
+    background:$background_article;
+    margin-bottom: 20px;
+  }
+  &:nth-child(6){
+    background:$background_article;
+    margin-bottom: 20px;
+  }
+  &:nth-child(7){
+    background:$background_article;
+    margin-bottom: 20px;
+  }
+
+
+
+}
+
+.about{
+  width: 80%;
+  margin: 30px 0 0 200px;
+  color: $text-color;
+
+  img{
+    width: 100%;
+  }
+
+  h1{
+    margin:0 0 0 87% ;
+    padding-bottom: 0px;
+    @include font2;
+    @include text;
+  }
+
+  p{
+    margin-top: 0;
+    line-height: 1.5;
+    font-size: 18px;
+    padding-right: 10px;
+    color: $text-color;
+  }
+}
+
+.contact-form{
+  display: inline-block;
+  width: 80%;
+  margin-left: 200px;
+  color: $text-color;
+
+  h1{
+    margin-left: 83%;
+    @include font2;
+    @include text;
+    margin-bottom: 0;
+
+  }
+
+  h4{
+    @include font2;
+    @include text;
+    text-align: right;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+
+
+    div{
+      display: inline-block;
+      float: right;
+      margin: 0 10px 0 10px;
+
+      &:nth-child(1){
+        float: left;
+      }
+      &:nth-child(2){
+        float: right;
+      }
+  }
+
+
+
+  input{
+
+    height: 40px;
+    width: 400px;
+    display: inline-block;
+    background: $background;
+    border: 1px solid silver;
+  }
+
+  textarea{
+    height: 100px;
+    width: 1020px;
+    display: inline-block;
+    background: $background;
+
+  }
+
+  label{
+   display: inline-block;
+    color: $text_color_h3;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+.btn{
+  @include btn;
+  @include text;
+  color: $whitesmoke;
+  background:$background_btn;
+  border: none;
+}
+}
+
+footer{
+  margin: 0 0 10px 10px;
+font-size: 14px;
+
+}
+
+
+
+

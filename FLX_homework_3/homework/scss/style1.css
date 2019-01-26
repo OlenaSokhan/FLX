@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  background: white; }
+  body .main-wrapper {
+    border: 5px solid silver; }
+  body .top-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+    body .top-wrapper nav {
+      display: flex; }
+      body .top-wrapper nav a {
+        color: #F5F5F5;
+        padding: 20px 110px 20px 110px;
+        font: normal 300 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-right: 2px solid silver; }
+        body .top-wrapper nav a:nth-child(3) {
+          border-right: none; }
+    body .top-wrapper .logo img {
+      width: 250px; }
+
+header {
+  height: 100vh;
+  background: url(../img/header_background_v1.jpg);
+  background-size: cover; }
+  header h1 {
+    text-align: center;
+    padding-top: 200px;
+    font: normal 300 24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    color: #F5F5F5;
+    text-transform: uppercase; }
+  header .btn-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 110px 0 0 -100px;
+    padding: 15px 80px 15px 80px;
+    background: #30d5c8;
+    color: #F5F5F5;
+    font: normal 300 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+.toolbar {
+  margin: 20px 0 0 80%; }
+  .toolbar input {
+    padding: 10px;
+    border: 1px solid #E0E0E0;
+    background: white; }
+
+.post-list h1 {
+  font: normal 300 24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px 0 0 89%;
+  color: #000; }
+.post-list img {
+  padding: 10px;
+  float: left;
+  clear: right; }
+.post-list .post-description {
+  border-right: none;
+  border-bottom: 1px solid grey;
+  border-left: none;
+  border-top: none;
+  padding: 0 0 10px 0;
+  margin: 0 20px 0 0;
+  padding-top: 10px;
+  color: red;
+  font-size: 14px; }
+.post-list .btn {
+  padding: 15px 80px 15px 80px;
+  background: #30d5c8;
+  color: #F5F5F5;
+  font: normal 300 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  float: right;
+  margin: 40px 20px 0 0; }
+.post-list .post h3 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal 300 15px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  color: #30d5c8;
+  font-size: 19px;
+  margin: 5px 0 0 0; }
+.post-list p {
+  font-family: "Liberation Serif";
+  font-size: 18px;
+  line-height: 1.5;
+  padding-right: 10px;
+  margin: 3px 0 0 0;
+  color: #000; }
+
+article {
+  background: #F5F5F5;
+  width: 80%;
+  margin-left: 200px;
+  display: flex; }
+  article:nth-child(2) {
+    background: #E0E0E0;
+    margin-bottom: 20px; }
+  article:nth-child(3) {
+    background: #E0E0E0;
+    margin-bottom: 20px; }
+  article:nth-child(4) {
+    background: #E0E0E0;
+    margin-bottom: 20px; }
+  article:nth-child(5) {
+    background: #E0E0E0;
+    margin-bottom: 20px; }
+  article:nth-child(6) {
+    background: #E0E0E0;
+    margin-bottom: 20px; }
+  article:nth-child(7) {
+    background: #E0E0E0;
+    margin-bottom: 20px; }
+
+.about {
+  width: 80%;
+  margin: 30px 0 0 200px;
+  color: #000; }
+  .about img {
+    width: 100%; }
+  .about h1 {
+    margin: 0 0 0 87%;
+    padding-bottom: 0px;
+    font: normal 300 24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .about p {
+    margin-top: 0;
+    line-height: 1.5;
+    font-size: 18px;
+    padding-right: 10px;
+    color: #000; }
+
+.contact-form {
+  display: inline-block;
+  width: 80%;
+  margin-left: 200px;
+  color: #000; }
+  .contact-form h1 {
+    margin-left: 83%;
+    font: normal 300 24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  .contact-form h4 {
+    font: normal 300 24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .contact-form div {
+    display: inline-block;
+    float: right;
+    margin: 0 10px 0 10px; }
+  .contact-form input {
+    height: 40px;
+    width: 500px;
+    display: inline-block;
+    background: white;
+    border: 1px solid silver; }
+  .contact-form textarea {
+    height: 100px;
+    width: 1020px;
+    display: inline-block;
+    background: white; }
+  .contact-form label {
+    display: inline-block;
+    color: #30d5c8;
+    font-size: 17px;
+    margin-top: 20px; }
+  .contact-form .btn {
+    padding: 15px 80px 15px 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #F5F5F5;
+    background: #30d5c8;
+    border: none; }
+
+footer {
+  margin: 0 0 10px 10px;
+  font-size: 14px; }
+
+/*# sourceMappingURL=style1.css.map */
