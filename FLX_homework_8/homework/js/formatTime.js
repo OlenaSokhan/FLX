@@ -9,6 +9,5 @@ function formatTime(min) {
 
     return day + 'day(s),' + hour + 'hour(s),' + minute + 'minute(s).'
 }
-
-console.log(formatTime(120))
+formatTime(120);
 
