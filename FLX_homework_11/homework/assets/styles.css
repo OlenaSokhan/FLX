@@ -1,0 +1,101 @@
+* {
+    font-family: sans-serif;
+
+}
+
+#root {
+    display: flex;
+}
+
+.wrapper {
+    background: #fff;
+    color: #333;
+    width: 50%;
+    height: 550px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    border: 1px solid black;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+h4 {
+    text-align: center;
+    font-weight: 100;
+}
+.secondHeader {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    margin: 0 20px;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+
+}
+
+.img {
+
+    position: absolute;
+    left: 47%;
+    top: 79%;
+
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.liItems {
+    list-style-type: none;
+    font-weight: bold;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.img img {
+    width: 60px;
+    height: 60px;
+}
+
+input[type="text"] {
+    margin: 0 5px 20px 10px;
+    padding: 1px;
+    font-size: 15px;
+    width: 87%;
+    border: 1px solid black;
+    font-family: Lato, sans-serif;
+    color: #888;
+}
+
+.btn, .checkBtn, .dltBtn {
+    background-color: transparent;
+    border-style: none;
+    padding: 0;
+
+}
+
+
+#todo-list {
+    width: 90%;
+    vertical-align: center;
+}
+
+.dltBtn {
+    margin-left: auto;
+}
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
