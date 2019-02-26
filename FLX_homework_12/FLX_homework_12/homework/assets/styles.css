@@ -1,0 +1,53 @@
+#first, #add, #modify{
+    width: 30%;
+    height: auto;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+.center{
+    text-align: center;
+}
+.btn{
+    font-size: 36px;
+}
+h1{
+    margin-left: 20px;
+}
+p{
+    font-size: 26px;
+    text-align: center;
+}
+.input{
+    font-size: 42px;
+    width: 90%;
+    margin: 10px;
+
+
+}
+#addSaveBtn, #modifySaveBtn{
+    float: right;
+}
+
+button{
+    margin: 20px;
+
+    font-size: 26px;
+}
+li{
+    list-style-type: none;
+    font-size: 26px;
+    display: block;
+    align-items: center;
+}
+img{
+    cursor: pointer;
+    margin-right: 10px;
+}
+.img2{
+    float: right;
+    margin-right: 40px;
+}
+
+#btnId{
+    margin-left: 120px;
+}
